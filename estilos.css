@@ -1,0 +1,60 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.canvas {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #e33;
+  background-color: #fff;
+}
+
+.circulo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #e33;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.uno {
+  top: 165px;
+  left: 35px;
+  border-radius: 50% 0% 50% 50%;
+  background-color: #339;
+}
+
+.dos {
+  top: 100px;
+  left: 100px;
+   border-radius: 50% 0% 50% 50%;
+}
+
+.tres {
+  top: 35px;
+  left: 165px;
+}
+
+.interseccion {
+  position: absolute;
+  border-radius: 50% 0% 50% 50%;
+  top: 100px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: repeating-linear-gradient(
+    90deg,
+    #339,
+    #339 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  clip-path: ellipse(50% 50% at 50% 50%);
+  opacity: 0.6;
+}

@@ -26,7 +26,7 @@ gap: 10px;
     flex-wrap: wrap;
     gap: 20px;
     border: 1px solid rgb(51, 153, 93);
-    background: #d7f5e0;
+    background: #807f7f;
     text-align: center;
 }
 .nav1 ul {
@@ -45,8 +45,8 @@ gap: 10px;
 
 .nav2{
     grid-area: nav2;
-    border: 1px solid rgb(153, 51, 68);
-    background: #f5d7e0;
+    border: 1px solid rgb(65, 31, 37);
+    background: #bdbdbd;
 }
 .nav1 ul, .nav2 ul{
     list-style: none;
@@ -58,14 +58,14 @@ gap: 10px;
 .main{
     grid-area: main;
     border: 1px solid rgb(51, 71, 153);
-    background: #d7e0f5;
+    background: #acacac;
 }
 
 
 .footer{
     grid-area: footer;
     border: 1px solid rgb(51, 109, 153);
-    background: #e0f5f5;
+    background: #4f5050;
     gap: 20px;
 
 }
@@ -73,9 +73,9 @@ gap: 10px;
     grid-area: footer;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 20px;  
     border: 1px solid rgb(51, 109, 153);
-    background: #e0f5f5;
+    background: #464646;
     flex-wrap: wrap;
 }
 .footer-content ul{list-style: none;
@@ -96,8 +96,24 @@ text-align: left;}
   text-align: center;
   text-decoration: none;
   margin: 10px 15px 10px;
-  border: 2px solid gray;
+  border: 2px solid rgb(75, 14, 116);
   border-radius: 10px;
+}
+
+.product-card img {
+  width: 75%;      /* Ajusta el ancho según lo que necesites */
+  height: auto;      /* Mantiene la proporción */
+  display: block;
+  margin: 0 auto;    /* Centra la imagen en la tarjeta */
+}
+
+.product-card h2 {
+    font-size: 100%;
+    color: rgb(49, 2, 49);
+}
+
+.product-card p { 
+    font-size: 95%;
 }
 
 .header-left{
@@ -107,12 +123,13 @@ text-align: left;}
     margin: 10px 15px 10px ;
 }
 
-.header-right{ color: #d7e0f5;
+.header-right{ color: #e4bff6;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 align-items: center;
-height: 100%;
-  width: 100%;
+font-size: 150%;
+height: 150%;
+  width: 110%;
   text-align: center;
 }
