@@ -1,60 +1,77 @@
-body {
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.canvas {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border: 3px solid #e33;
-  background-color: #fff;
+  body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;     
+  justify-content:center;
+  align-items:center;
+  background:#f0f0f0;
 }
 
-.circulo {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border: 3px solid #e33;
-  border-radius: 50%;
-  background-color: transparent;
+.canvas{
+  position:relative;
+  width:500px;
+  height:500px;
+  margin-bottom:20px;
 }
 
-.uno {
-  top: 165px;
-  left: 35px;
-  border-radius: 50% 0% 50% 50%;
-  background-color: #339;
+
+.circulo{
+  position:absolute;
+  border-radius:50%;
 }
 
-.dos {
-  top: 100px;
-  left: 100px;
-   border-radius: 50% 0% 50% 50%;
+
+.uno{
+  top:260px; left:110px;
+  width:190px; height:190px;
+  background:#e31111;
+  border-radius:50% 0 50% 50%;
+  z-index:3;
 }
 
-.tres {
-  top: 35px;
-  left: 165px;
-}
 
-.interseccion {
-  position: absolute;
-  border-radius: 50% 0% 50% 50%;
-  top: 100px;
-  left: 100px;
-  width: 100px;
-  height: 100px;
+.dos{
+  top:170px; 
+  left:170px;
+  width:250px;
+   height:250px;
   background: repeating-linear-gradient(
-    90deg,
-    #339,
-    #339 4px,
-    transparent 4px,
-    transparent 8px
+    45deg,
+    #1846d8 0 16px,
+    #5fa3ff 16px 32px
   );
-  clip-path: ellipse(50% 50% at 50% 50%);
-  opacity: 0.6;
+  border-radius:50% 0 50% 50%;
+  z-index:2;
+}
+
+
+.tres{
+  top:70px; 
+  left:260px;
+  width:280px; 
+  height: 280px;
+  background:#f9a23b;
+  z-index:1;
+}
+
+
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  background:#333;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-size:26px;
+}
+.btn:hover{
+  background:#555;
 }
