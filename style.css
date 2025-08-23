@@ -15,11 +15,11 @@ html, body {
 :root {
   --primary-color: #000000;      /* Color principal - morado oscuro */
   --secondary-color: #a837ff;    /* Color secundario - azul */
-  --accent-color: #f72585;       /* Color de acento - rosa */
+  --accent-color: #ff00e6;       /* Color de acento - rosa */
   --dark-bg: #232335;            /* Fondo oscuro */
-  --light-bg: #f8f9fa;           /* Fondo claro */
-  --card-bg: #ffffff;            /* Fondo de tarjetas */
-  --text-light: #ffffff;         /* Texto claro */
+  --light-bg: #c5e2f5;           /* Fondo claro */
+  --card-bg: #c5e2f5;            /* Fondo de tarjetas */
+  --text-light: #c5e2f5;         /* Texto claro */
   --text-dark: #16213e;          /* Texto oscuro */
   --spacing: 1rem;               /* Espacio interior por defecto */
   --gap: 0.5rem;                 /* Separación entre elementos */
@@ -64,6 +64,13 @@ grid-template-columns: 0.12fr 1fr;
     height: 65px;
     display: flex;
 }
+.header-left img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+
 
 .header-right {
   color: var(--text-light);
@@ -83,7 +90,7 @@ grid-template-columns: 0.12fr 1fr;
     flex-wrap: wrap;
     gap: 20px;
     border: none;
-    background: #807f7f;
+    background: #66606f;
     text-align: center;
     justify-content: center;
 }
@@ -161,7 +168,7 @@ grid-template-columns: 0.12fr 1fr;
     border: none;
     border-radius: 12px 0 0 0;
     align-items: center;
-    background: #acacac;
+    background: #a4adae;
     overflow-y: auto;
     height: 100%;
     min-height: 0;
